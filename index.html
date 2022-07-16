@@ -445,7 +445,7 @@
               name="user-email"
               placeholder="E-mail"
             />
-            <button class="button button-sing-up" type="button">
+            <button class="button button-sing-up" type="submit">
               Підписатися
               <svg class="button-sing-up-icon" aria-hidden="true">
                 <use href="./images/first-page/icons/symbol-defs.svg#icon-icon-send"></use>
@@ -458,7 +458,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg aria-hidden="true">
+          <svg class="icon-close" aria-hidden="true">
             <use href="./images/first-page/icons/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
@@ -501,15 +501,17 @@
                 placeholder="Введіть текст"
               ></textarea>
             </div>
-            <div class="terms-condition">
-              <input
-                class="terms-condition-input"
-                id="terms-condition"
-                type="checkbox"
-                name="terms-condition"
-              />
-              <label class="terms-condition-label" for="terms-condition"
-                >Погоджуюся з розсилкою та приймаю
+            <div class="checkbox-thumb">
+              <input class="checkbox-input" id="checkbox" type="checkbox" name="checkbox" />
+              <svg class="checkbox-border" aria-hidden="true">
+                <use href="./images/first-page/icons/symbol-defs.svg#icon-border-check"></use>
+              </svg>
+              <svg class="checkbox-icon" aria-hidden="true">
+                <use href="./images/first-page/icons/symbol-defs.svg#icon-icon-check"></use>
+              </svg>
+
+              <label class="checkbox-label" for="checkbox">
+                Погоджуюся з розсилкою та приймаю
                 <a class="form-fild-link" href="#">Умови договору</a>
               </label>
             </div>
