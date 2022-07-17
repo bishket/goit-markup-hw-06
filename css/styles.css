@@ -764,12 +764,19 @@ img {
 }
 
 .checkbox-label {
-  margin-left: 10px;
+  margin-left: 24px;
 }
 
 .checkbox-input {
-  appearance: none;
   margin-right: 7px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form-fild-link {
