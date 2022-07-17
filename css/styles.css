@@ -440,10 +440,6 @@ img {
 }
 /* Подвал */
 
-.logo-footer {
-  margin-right: 70px;
-}
-
 .color-logo-footer {
   display: inline-block;
   margin-bottom: 20px;
@@ -477,10 +473,7 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
-}
-
-.cta {
-  margin-right: 93px;
+  justify-content: space-between;
 }
 
 .social-title {
@@ -543,7 +536,7 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--background-basic);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -621,7 +614,8 @@ img {
   transition: fill var(--timing-function);
 }
 
-.modal-button:hover .icon-close {
+.modal-button:hover .icon-close,
+.modal-button:focus .icon-close {
   fill: var(--accent-color);
 }
 
@@ -677,18 +671,11 @@ img {
   transition: border var(--timing-function);
 }
 
-.form-fild-input:hover,
 .form-fild-input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.form-fild-icon {
-  display: flex;
-  transition: fill var(--timing-function);
-}
-
-.form-fild:hover .form-fild-icon,
 .form-fild:focus-within .form-fild-icon {
   fill: var(--accent-color);
 }
@@ -707,7 +694,6 @@ img {
   letter-spacing: 0.01em;
 }
 
-.form-fild-feedback:hover,
 .form-fild-feedback:focus {
   border: 1px solid var(--accent-color);
   outline: none;
@@ -739,6 +725,9 @@ img {
   width: 18px;
   height: 18px;
   transform: translateY(-50%);
+
+  display: flex;
+  transition: fill var(--timing-function);
 }
 
 .checkbox-thumb {
@@ -746,11 +735,11 @@ img {
   position: relative;
 }
 
-.checkbox:checked ~ .checkbox-icon {
+.checkbox-input:checked ~ .checkbox-icon {
   opacity: 1;
 }
 
-.checkbox:checked ~ .checkbox-border {
+.checkbox-input:checked ~ .checkbox-border {
   opacity: 0;
 }
 
